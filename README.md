@@ -1,6 +1,8 @@
-# SinglePageApplication
+# Superheroes App
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.0.
+
+*I will soon make another version of this app just using Node, Express and EJS, and thereby considerably reducing the amount of documents and complexity involved.
 
 ## Development server
 
