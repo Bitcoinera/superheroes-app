@@ -70,11 +70,14 @@ export class HeroesService {
       let heroesArr:Hero[] = [];
       query = query.toLowerCase();
   
-      for( let hero of this.heroes) { 
-  
+      for( let i = 0; i < this.heroes.length; i++ ) { 
+        
+        let hero = this.heroes[i];
+
         let name = hero.nombre.toLowerCase();
   
         if( name.indexOf( query ) >= 0  ){
+          hero.index = i;
           heroesArr.push( hero )
         }  
       }
@@ -88,4 +91,5 @@ export interface Hero {
     img: string;
     aparicion: string;
     casa: string;
+    index?: number;
 }
